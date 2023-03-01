@@ -81,8 +81,7 @@ class ProductoController {
                     $_SESSION['notSaved'] = 'Invalid type of image';
                 }
             } else {
-                echo "hola";
-                die();
+
                 $_SESSION['notSaved'] = 'Error in the form';
             }
         } else {

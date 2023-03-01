@@ -105,7 +105,7 @@ class Usuario {
         $sql = "INSERT INTO usuarios VALUES(null,'$this->nombre','$this->apellidos','$this->email','$hashed_password','user','$this->imagen')";
         $save = $this->db->query($sql);
 
-
+        
 
         if ($save) {
             $result = true;
@@ -113,6 +113,28 @@ class Usuario {
         } else {
             return $result;
         }
+    }
+    
+    function update($noChangeImage){
+        
+        $result = false;
+        $sql =  "UPDATE usuarios SET nombre='$this->nombre', apellidos ='$this->apellidos', email ='$this->email'";
+        if(!$noChangeImage){
+                $sql.= ",imagen ='$this->imagen'";
+        }
+        $sql.= "WHERE id={$this->id}";
+
+        $update = $this->db->query($sql);
+
+
+        if ($update) {
+            $result = true;
+            return $result;
+        } else {
+            return $result;
+        }
+            
+        
     }
     
 

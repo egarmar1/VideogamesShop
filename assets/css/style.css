@@ -347,3 +347,7 @@ button{
     background: #222222;
     border-top: 4px solid #d60999;
 }
+
+.profileFoto{
+    width:9%;
+}

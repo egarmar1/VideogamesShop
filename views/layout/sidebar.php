@@ -35,6 +35,7 @@
                     <li><a href='<?=base_url?>producto/favourites'>Favourites</a></li>
                 <li><a href='<?=base_url?>carrito/index'>Shopping cart</a></li>
                 <li><a href='<?=base_url?>pedido/usuario'>My orders</a></li>
+                <li><a href='<?=base_url?>usuario/info'>Manage account</a></li>
                 <li><a href='<?= base_url ?>usuario/close'>Logout</a></li>
             </ul>
         <?php endif; ?>
