@@ -9,6 +9,7 @@
                 <img src="<?= base_url ?>uploads/images/<?= $fav->imagen ?>"/>
                 <h2><?= $fav->titulo ?></h2>
                 <p><?= $fav->precio ?></p>
+                <a href="<?= base_url ?>carrito/add&id=<?= $fav->id_producto ?>" class="button">Buy</a>
                 <a href="<?= base_url ?>producto/deleteFav&id=<?= $fav->id_producto?>" class="button">Delete from Favourites</a>
         </div>
 

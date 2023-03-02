@@ -7,7 +7,7 @@
             <img src="<?= base_url ?>uploads/images/<?= $prod->imagen ?>"/>
             <h2><?= $prod->titulo ?></h2>
             <p><?= $prod->precio ?> $</p>
-            <a href="<?= base_url ?>carrito/add&id=<?= $prod->id ?>" class="button">Comprar</a>
+            <a href="<?= base_url ?>carrito/add&id=<?= $prod->id ?>" class="button">Buy</a>
            
             <a href="<?= base_url ?>producto/addFavourite&id=<?= $prod->id ?>" class="button button-favourite">Add to favourites</a>
             
