@@ -5,6 +5,7 @@ require_once 'models/Producto.php';
 Class CarritoController {
 
     function index() {
+        Utils::isIdentified();
         $hayCarrito = false;
         if (isset($_SESSION['carrito'])) {
             $carrito = $_SESSION['carrito'];
@@ -63,6 +64,40 @@ Class CarritoController {
         
         header("Location:".base_url."carrito/index");
     }
+    
+    function sumOne(){
+        Utils::isIdentified();
+        
+        if(isset($_GET['key'])){
+            
+            $index = $_GET['key'];
+            $_SESSION['carrito'][$index]['unidades']++;
+        }
+        
+        header("Location:".base_url."carrito/index");
+    }
+    
+    function restOne(){
+        Utils::isIdentified();
+        
+        if(isset($_GET['key'])){
+            
+            $index = $_GET['key'];
+            $_SESSION['carrito'][$index]['unidades']--;
+        }
+        if($_SESSION['carrito'][$index]['unidades'] == 0){
+            
+            unset($_SESSION['carrito'][$index]);
+            
+        }
+        
+        if(empty($_SESSION['carrito'])){
+            unset($_SESSION['carrito']);
+        }
+        
+        header("Location:".base_url."carrito/index");
+    }
+    
     function deleteAll(){
         if(isset($_SESSION['carrito'])){
             unset($_SESSION['carrito']);

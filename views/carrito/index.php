@@ -19,8 +19,13 @@
                 <td><img src="<?= base_url ?>uploads/images/<?= $prod->imagen ?>"/></td>
                 <td><?= $prod->titulo ?></td>
                 <td><?= $prod->precio ?></td>
-                <td><?= $element['unidades'] ?></td>
+                <td>
+                <a href="<?=base_url?>carrito/restOne&key=<?=$key?>">-</a>
+                <?= $element['unidades'] ?>
+                <a href="<?=base_url?>carrito/sumOne&key=<?=$key?>">+</a>
+                </td>
 
+                
         </tr>
 
     <?php endforeach; ?>
