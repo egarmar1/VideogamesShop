@@ -19,7 +19,13 @@
         <td><?=$prod->id?></td>
         <td><?=$prod->titulo?></td>
         <td><?=$prod->precio?></td>
-        <td><?=$prod->stock?></td>
+        <td>
+        <a href="<?=base_url?>producto/restStock&id=<?=$prod->id?>">-</a>
+                <?=$prod->stock?>
+                <a href="<?=base_url?>producto/sumStock&id=<?=$prod->id?>">+</a>
+        
+        
+        </td>
         
         
     </tr>

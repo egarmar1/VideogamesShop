@@ -33,7 +33,7 @@ table {
     font-family: Arial, sans-serif;
 }
 th, td {
-    text-align: left;
+    text-align: center;
     padding: 7px;
     border-bottom: 1px solid #ddd;
     border-right: 1px solid #ddd; /* add border to separate columns */
@@ -288,6 +288,32 @@ button{
 .button-favourite{
     margin-top: 5px;
 }
+
+a[href*="restOne"] {
+  background-color: #f44336;
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: all 0.2s ease-in-out;
+}
+a[href*="restOne"]:hover {
+  background-color: #d32f2f;
+}
+
+a[href*="sumOne"] {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: all 0.2s ease-in-out;
+}
+
+a[href*="sumOne"]:hover {
+  background-color: #388e3c;
+}
+
 /*CENTRAL*/
 
 #core{

@@ -7,7 +7,7 @@
             <th>Title</th>
             <th>Price</th>
             <th>Units</th>
-            <th>Edit</th>
+
 
         </tr>
         <?php foreach ($carrito as $key => $element): ?>

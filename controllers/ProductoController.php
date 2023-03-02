@@ -137,5 +137,31 @@ class ProductoController {
           header("Location:".base_url."producto/favourites");
         }
     }
+    
+    function sumStock(){
+        if(isset($_GET['id'])){
+            $id = $_GET['id'];
+            
+            $prod = new Producto();
+            $prod->setId($id);
+            $prod->sumStock();
+            
+            header("Location:".base_url."producto/gestion");
+            
+        }
+    }
+    
+    function restStock(){
+        if(isset($_GET['id'])){
+            $id = $_GET['id'];
+            
+            $prod = new Producto();
+            $prod->setId($id);
+            $prod->restStock();
+            
+            header("Location:".base_url."producto/gestion");
+            
+        }
+    }
 
 }

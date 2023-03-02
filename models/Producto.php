@@ -179,5 +179,40 @@ class Producto {
         }
         return false;
     }
+    function sumStock(){
+        $result = false;
+        
+        $sql = "UPDATE productos SET stock = stock + 1 WHERE id=$this->id";
+         
+        $update = $this->db->query($sql);
+        
+        if($update){
+            $result = true;
+        }
+        return $result;
+    }
+    
+    function restStock(){
+        $result = false;
+            
+        $sql = "SELECT stock from productos WHERE id=$this->id";
+        $select = $this->db->query($sql);
+        $stock = $select->fetch_object()->stock;
+        
+        var_dump($stock);
+        
+        if($stock == "1" ){
+            $sql = "DELETE FROM productos WHERE id=$this->id";
+        }else{
+            $sql = "UPDATE productos SET stock = stock - 1 WHERE id=$this->id";
+        }
+        
+        $update = $this->db->query($sql);
+        
+        if($update){
+            $result = true;
+        }
+        return $result;
+    }
 
 }
