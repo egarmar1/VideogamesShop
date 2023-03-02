@@ -364,6 +364,9 @@ a[href*="sumOne"]:hover {
     margin-bottom: 10px;
 }
 
+#detail-product img{
+    width: 40%;
+}
 
 #footer{
     text-align: center;
