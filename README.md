@@ -48,5 +48,17 @@ Of course we have the option of managing your account, just in case you want to 
 ### Logout
 And finally we have the option for logout.
 
+
 ## Admin view
-This is the user View, in a few days i will explain what the admin can do
+If the user has admin permissions will be able to manage the categories and manage the products
+
+## Manage categories
+
+Here we have listed all the categories, with a button for creating a new one 
+<img src="assets/img/categor‪iesAdmin.PNG alt="My Image">
+
+We create one 
+<img src="assets/img/CreateCategory.PNG alt="My Image">
+
+And now the category is created and listed not only in the table,, but in the main menu as well
+<img src="assets/img/categoryCreated.PNG alt="My Image">
