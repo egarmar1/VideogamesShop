@@ -66,6 +66,7 @@ We create a new category...
 And now the category is created and listed not only in the table, but in the main menu as well
 
 <img src="assets/img/categoryCreated.PNG" alt="My Image">
+<<<<<<< HEAD
 
 ## Manage products
 Furthermore there's the option to see all the products, and change its stock
@@ -73,3 +74,5 @@ Furthermore there's the option to see all the products, and change its stock
 If we click on the button Create product a form will appear, and after filling out all the fields a game will be saved in the database
 <img src="assets/img/CreateProduct.PNG" alt="My Image">
 <img src="assets/img/gameCreated.PNG" alt="My Image">
+=======
+>>>>>>> 2fbaabe0118a87bca5d5bb6582dd2be4387c02ba
