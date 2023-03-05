@@ -30,7 +30,9 @@ Here we have our favourite games that we have been choosing
 And if you want to delete a game from favourites just press the botton delete from favourites.
 ### Shopping cart
 Then there's the shopping cart:
+
 <img src="assets/img/shoppingCart.PNG" alt="My Image">
+
 Where we can add different games to it, and buy them.
 We add some shippment information: 
 <img src="assets/img/shipmentInfo.PNG" alt="My Image">
@@ -55,10 +57,12 @@ If the user has admin permissions will be able to manage the categories and mana
 ## Manage categories
 
 Here we have listed all the categories, with a button for creating a new one 
-<img src="assets/img/categor‪iesAdmin.PNG alt="My Image">
+<img src="assets/img/categor‪iesAdmin.PNG" alt="My Image">
 
-We create one 
-<img src="assets/img/CreateCategory.PNG alt="My Image">
+We create a new category...
 
-And now the category is created and listed not only in the table,, but in the main menu as well
-<img src="assets/img/categoryCreated.PNG alt="My Image">
+<img src="assets/img/CreateCategory.PNG" alt="My Image">
+
+And now the category is created and listed not only in the table, but in the main menu as well
+
+<img src="assets/img/categoryCreated.PNG" alt="My Image">
